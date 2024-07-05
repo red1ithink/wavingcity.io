@@ -1,0 +1,88 @@
+    /* slider-box */
+    .board .slider-box{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        position: relative;
+        margin-top: 800px;
+        padding-top: 80px;
+        max-width: 1200px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+        z-index: 1;
+    }
+    /* next / prev */
+        .slider-box span{
+            text-indent: -999px;
+            overflow: hidden;
+            display: block;
+
+            width: 24px;
+            height: 24px;
+
+            opacity: 0.5;
+        }
+        .slider-box .btn-prev{
+
+            background: #fff url("/image/board/prev.png") no-repeat center;
+            background-size: contain;
+        }
+        .slider-box .btn-next{
+
+            background: #fff url("/image/board/next.png") no-repeat center;
+            background-size: contain;
+        }
+
+        /* slider */
+        .slider{
+            position: relative;
+            /* pc -> 300px */
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+        }
+            .slider .files{
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                display: flex;
+
+                transition: 0.5s;
+            }
+                .files .file{
+                    /* pc -> 300px */
+                    width: 200px;
+                    height: 200px;
+                }
+                    .file .thumbnail{
+                        width: 100%;
+                        height: 100%;
+                    }
+        .slider-box .pagination{
+
+            background: transparent;
+            position: absolute;
+            bottom: 0;
+            z-index: 500;
+
+            display: flex;
+            gap: 5px;
+            height: 15px;
+
+        }
+            .pagination .item{
+                border-radius: 50%;
+                width: 8px;
+                height: 8px;
+
+                background: #707070;
+            }
+            .pagination .active{
+                background: #ff9c34 !important;
+            }
