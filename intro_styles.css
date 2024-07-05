@@ -157,7 +157,7 @@ main {
 .product-p {
   font-size: 36px;
   width: 100%;
-  padding-bottom: 30px;
+  padding-bottom: 0px;
   margin-bottom: 10px;
   position: relative; 
   opacity: 0;
@@ -181,7 +181,7 @@ main {
 
 .products-wrap {
   background-color: rgba(243,243,243 ,1);
-  margin-top: 1000px; /* 위 div와의 간격 설정 */
+  margin-top: 500px; /* 위 div와의 간격 설정 */
   display: flex;
   flex-wrap: wrap; /* 여러 줄로 나열 */
   justify-content: space-between; /* 양쪽 끝 정렬 */
@@ -239,7 +239,7 @@ main {
   display: flex;
   flex-direction: column;
   margin-bottom: 0px;
-  margin-top: 40px;
+  margin-top: 4px;
 }
 
 .product1, .product2, .product3, .product4 {

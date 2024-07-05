@@ -1,142 +1,154 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>red1ithink Gallery</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="about.css">
-	<link rel="stylesheet" type="text/css" href="intro_styles.css">
-  <link rel="stylesheet" type="text/css" href="about.css">
-  <link rel="stylesheet" type="text/css" href="slider.css">
-</head>
-  <header>
-    <nav>
-      <ul>
-        <li>
-          <a href="#"><img src="img/logo.PNG"></a>
-          <a href="#details" class="headers">PRODUCT</a>
-          <a href="#archive" class="headers">PROJECT</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <title>red1ithink Gallery</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="about.css" />
+    <link rel="stylesheet" type="text/css" href="intro_styles.css" />
+    <link rel="stylesheet" type="text/css" href="about.css" />
+    <link rel="stylesheet" type="text/css" href="slider.css" />
+  </head>
+  <body>
+    <!-- 배경 음악 추가 -->
+    <audio id="background-music" autoplay loop>
+      <source src="music.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
 
-  <div id="background">
-    <div class="logo-container">
-    <div id="WAVING_CITY">
-      <!--<span>waving<br />city</span>-->
-      <!--<img src="img/logo.PNG" alt="big-logo">-->
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#"><img src="img/logo.PNG" /></a>
+            <a href="#details" class="headers">PRODUCT</a>
+            <a href="#archive" class="headers">PROJECT</a>
+            <a href="#about" class="headers">ABOUT</a>
+            <button id="music-toggle" class="headers">Music Off</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="background">
+      <div class="logo-container">
+        <div id="WAVING_CITY"></div>
+      </div>
     </div>
-    </div>
-  </div>
-  </div>
-  <main id="border">
-      
+
+    <main id="border">
       <div class="up-wrap">
-        <img src="img/arrow-up-icon.png" class="up">
+        <img src="img/arrow-up-icon.png" class="up" />
       </div>
 
       <div class="products-wrap">
         <p class="product-p">ALBUM<br />PACKAGE</p>
         <div class="pro1">
-          <img src="img/package.png" alt="Pro1">
+          <img src="img/package.png" alt="Pro1" />
         </div>
       </div>
 
-
       <div class="products-wrap2">
         <p class="product-p" id="details">PACKAGE<br />DETAILS</p>
-
         <div class="gallery-wrap">
-          
           <div class="gallery-item">
             <div class="slider">
-              <img src="img/mok1.jpeg" class="Image 1">
-              <img src="img/cddetail.png" class="Image 2" loading = “lazy”>
-              <img src="img/keyring_sticker.png" class="Image 3" loading = “lazy”>
-              <!--<img src="img/mok4.jpeg" class="Image 4"> -->
+              <img src="img/mok1.jpeg" class="Image 1" />
+              <img src="img/cddetail.png" class="Image 2" loading="lazy" />
+              <img
+                src="img/keyring_sticker.png"
+                class="Image 3"
+                loading="lazy"
+              />
             </div>
           </div>
           <div class="button-container">
-            <button class="prev"><img src="img/back_button.png" class="backbutton"></button>
-            <button class="next"><img src="img/next_button.png" class="nextbutton"></button>
+            <button class="prev">
+              <img src="img/back_button.png" class="backbutton" />
+            </button>
+            <button class="next">
+              <img src="img/next_button.png" class="nextbutton" />
+            </button>
           </div>
         </div>
         <ul class="pagination"></ul>
         <div class="button-wrap1">
-          <a href="https://www.yes24.com/Product/Goods/98820861" class="buy">GET : ALBUM PACKAGE</a>
+          <a href="https://www.yes24.com/Product/Goods/98820861" class="buy"
+            >GET : ALBUM PACKAGE</a
+          >
         </div>
 
+        <p class="product-p" id="archive">PROJECT<br />DETAIL</p>
+        <div class="about-wrap">
+          <div class="background-image"></div>
+          <div class="content-container">
+            <h3>Pt.1: Love in Slow Motion</h3>
+            <ul class="track-list">
+              <a
+                href="https://music.apple.com/kr/playlist/%EC%8B%AC%EC%95%BC%EC%9D%98-%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B8%8C/pl.ce61f0565d654619959f82b402b78155"
+                style="text-decoration: none"
+                ><h4>33.1 Vibe: Album Track List</h4></a
+              >
+              <iframe
+                allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
+                frameborder="0"
+                height="450"
+                style="
+                  width: 100%;
+                  max-width: 660px;
+                  overflow: hidden;
+                  border-radius: 10px;
+                "
+                sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+                src="https://embed.music.apple.com/kr/playlist/%EC%8B%AC%EC%95%BC%EC%9D%98-%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B8%8C/pl.ce61f0565d654619959f82b402b78155"
+              ></iframe>
+            </ul>
+            <h5>도시라는 거품 속에서 피어나는 느린 사랑</h5>
+            <p class="description">
+              순수한 마음으로 사랑을 시작하더라도, 도시의 빠른 속도는 사랑을
+              거품처럼 허무하게 만들고, 쉽게 사라지게 합니다.<br />Love in Slow
+              Motion 는 이런 도시의 현실 속에서도 조금이나마 사랑을 천천히,
+              느리게 흘러가도록 만드는 공간입니다.
+            </p>
+            <h5>Love in Slow Motion의 공간 속에서</h5>
+            <p class="highlights">
+              느린 속도로 피어나는 사랑: 도시의 급박함 속에서 잊어버렸던 사랑의
+              아름다움을 되찾게 합니다.<br />영원히 기억될 소중한 추억: 서로가
+              함께한 시간은 잊지 못할 추억으로 남아 마음속에 따뜻하게 자리 잡을
+              것입니다.
+            </p>
+          </div>
+        </div>
+      </div>
 
-      <!-----------------for rug-----------------
-
-      <div class="products-wrap2">
-        <p class="product-p">SPECIAL<br />RUG</p>
-
-        <div class="gallery-wrap">
-          <div class="gallery-item">
-            <div class="rug-img">
-              <img src="img/mok1.jpeg">
+      <p class="product-p" style="opacity: 1" id="about">ABOUT<br />TEAM</p>
+      <div class="team-wrap">
+        <div class="section-container">
+          <div class="team-section">
+            <div class="team_member1">
+              <img src="img/team1.jpg" loading="lazy" />
+              <img src="img/team1_2.png" class="member" loading="lazy" />
+            </div>
+            <div class="team_member2">
+              <img src="img/team2.jpg" loading="lazy" />
+              <img src="img/team2_2.png" class="member" loading="lazy" />
+            </div>
+            <div class="team_member3">
+              <img src="img/team3.jpg" loading="lazy" />
+              <img src="img/team3_2.png" class="member" loading="lazy" />
+            </div>
+            <div class="team_member4">
+              <img src="img/team4.jpg" loading="lazy" />
+              <img src="img/team4_2.png" class="member" loading="lazy" />
             </div>
           </div>
         </div>
-        <div class="button-wrap2">
-          <a href="https://www.yes24.com/Product/Goods/98820861" class="buy" id="about">GET : ALBUM PACKAGE</a>
-        </div>
-      -->
-      <!-------------about----------------->
-      <p class="product-p" id="archive">PROJECT<br />DETAIL</p>
-      <div class="about-wrap">
-        <div class="background-image"></div>
-        <div class="content-container">
-            <h3>Pt.1: Love in Slow Motion</h3>
-            <ul class="track-list">
-              <a href="https://music.apple.com/kr/playlist/%EC%8B%AC%EC%95%BC%EC%9D%98-%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B8%8C/pl.ce61f0565d654619959f82b402b78155" style="text-decoration: none;"><h4>33.1 Vibe: Album Track List</h4></a>
-              <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/kr/playlist/%EC%8B%AC%EC%95%BC%EC%9D%98-%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B8%8C/pl.ce61f0565d654619959f82b402b78155"></iframe>
-            </ul>
-            <h5>도시라는 거품 속에서 피어나는 느린 사랑</h5>
-            <p class="description">순수한 마음으로 사랑을 시작하더라도, 도시의 빠른 속도는 사랑을 거품처럼 허무하게 만들고, 쉽게 사라지게 합니다.<br />Love in Slow Motion 는 이런 도시의 현실 속에서도 조금이나마 사랑을 천천히, 느리게 흘러가도록 만드는 공간입니다.</p>
-            <h5>Love in Slow Motion의 공간 속에서</h5>
-            <p class="highlights">느린 속도로 피어나는 사랑: 도시의 급박함 속에서 잊어버렸던 사랑의 아름다움을 되찾게 합니다.<br />영원히 기억될 소중한 추억: 서로가 함께한 시간은 잊지 못할 추억으로 남아 마음속에 따뜻하게 자리 잡을 것입니다.</p>
-<!--
-            <div class="video-project">
-              <h5>Video Art</h5>
-              <div claas="video-container"><img src="img/video.mp4" class="video1"></div>
-            </div>-->
+        <a href="https://www.instagram.com/wavingcity/" class="more"
+          >WAVING CITY : Archive</a
+        >
       </div>
-      </div>
-      </div>
+    </main>
 
-    <p class="product-p" style="opacity: 1;" id="about">ABOUT<br />TEAM</p>
-    <div class="team-wrap">
-      <!--<h2>WAVING CITY</h2>
-      <p1 class="subtitle">도시의 숨겨진 감정을 재발견하다.<br />Rediscovering the City's Unseen Heart<br /><br /></p1>-->
-        <div class="section-container">
-        <div class="team-section">
-          <div class="team_member1">
-            <img src="img/team1.jpg" loading = “lazy”>
-            <img src="img/team1_2.png" class="member" loading = “lazy”>
-          </div>
-          <div class="team_member2">
-            <img src="img/team2.jpg" loading = “lazy”>
-            <img src="img/team2_2.png" class="member" loading = “lazy”>
-          </div>
-          <div class="team_member3">
-            <img src="img/team3.jpg" loading = “lazy”>
-            <img src="img/team3_2.png" class="member" loading = “lazy”>
-          </div>
-          <div class="team_member4">
-            <img src="img/team4.jpg" loading = “lazy”>
-            <img src="img/team4_2.png" class="member" loading = “lazy”>
-          </div>
-        </div>
-      </div>
-      <a href="https://www.instagram.com/wavingcity/" class="more">WAVING CITY  :  Archive</a>
-    </div>
-  </main>
     <script src="script.js"></script>
-    <script src="slider2.js"></script>
-    <script src="about.js"></script>
-
-</body>
+  </body>
 </html>

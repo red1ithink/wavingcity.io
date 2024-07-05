@@ -36,5 +36,21 @@ observer.observe(p[2])
 observer.observe(p[3])
 observer.observe(p[4])
 
+//music controller
+document.addEventListener('DOMContentLoaded', function() {
+    var audio = document.getElementById('background-music');
+    var toggleBtn = document.getElementById('music-toggle');
+
+    toggleBtn.addEventListener('click', function() {
+        if (audio.paused) {
+            audio.play();
+            toggleBtn.textContent = 'Music Off';
+        } else {
+            audio.pause();
+            toggleBtn.textContent = 'Music On';
+        }
+    });
+});
+
 
 
