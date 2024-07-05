@@ -41,13 +41,18 @@ document.addEventListener('DOMContentLoaded', function() {
     var audio = document.getElementById('background-music');
     var toggleBtn = document.getElementById('music-toggle');
 
+    // 첫 페이지 로드 시 자동 재생 시도 (최신 브라우저 정책에 의해 무시될 수 있음)
+    audio.play().catch(function(error) {
+        console.log("Autoplay failed, user interaction needed.");
+    });
+
     toggleBtn.addEventListener('click', function() {
         if (audio.paused) {
             audio.play();
-            toggleBtn.textContent = 'Music Off';
+            toggleBtn.setAttribute('src', 'img/wave-sound.png'); // 아이콘을 '음악 켜짐' 상태로 변경
         } else {
             audio.pause();
-            toggleBtn.textContent = 'Music On';
+            toggleBtn.setAttribute('src', 'img/wave-sound.png'); // 아이콘을 '음악 꺼짐' 상태로 변경
         }
     });
 });
