@@ -22,7 +22,7 @@ header {
   padding: 13px;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  border-bottom: 1px solid rgba(243, 243, 243, 1);
   z-index: 10;
 }
 
@@ -86,10 +86,10 @@ nav ul li {
 
 
 nav ul li a {
-  color: rgba(243, 243, 243, 1);
   text-decoration: none;
   font-size: 16px;
   padding: 20px;
+  color: rgba(243,243,243 ,1);
 }
 
 main {

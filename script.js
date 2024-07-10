@@ -1,18 +1,23 @@
 //Header
 window.addEventListener('scroll', function() {
     var header = document.querySelector('header');
+    var links = header.querySelectorAll('a');
 
-    
     var scrollPosition = window.scrollY;
 
-    
     if (scrollPosition < 10) {
-        header.style.borderBottom = '1px solid rgba(0, 0, 0, 0)';
+        header.style.borderBottom = '1px solid rgba(243, 243, 243, 1)';
         header.style.backgroundColor = 'rgba(153, 153, 153, 0)';
+        links.forEach(function(link) {
+            link.style.color = 'rgba(243, 243, 243, 1)';
+        });
     } else {
         header.style.display = 'block';
-        header.style.backgroundColor = 'rgba(243,243,243 ,1)';
-        header.style.borderBottom = 'rgba(243,243,243 ,1)';
+        header.style.backgroundColor = 'rgba(243, 243, 243, 1)';
+        header.style.borderBottom = '1px solid rgba(243, 243, 243, 1)';
+        links.forEach(function(link) {
+            link.style.color = 'rgba(0, 0, 0, 1)';
+        });
     }
 });
 
