@@ -2,6 +2,7 @@
 window.addEventListener('scroll', function() {
     var header = document.querySelector('header');
     var links = header.querySelectorAll('a');
+    var logo = document.getElementById('header-logo');
 
     var scrollPosition = window.scrollY;
 
@@ -11,6 +12,8 @@ window.addEventListener('scroll', function() {
         links.forEach(function(link) {
             link.style.color = 'rgba(243, 243, 243, 1)';
         });
+        // Change the image source when the scroll position is less than 10
+        logo.src = 'img/white_logo.png';
     } else {
         header.style.display = 'block';
         header.style.backgroundColor = 'rgba(243, 243, 243, 1)';
@@ -18,6 +21,8 @@ window.addEventListener('scroll', function() {
         links.forEach(function(link) {
             link.style.color = 'rgba(0, 0, 0, 1)';
         });
+        // Change the image source when the scroll position is greater than or equal to 10
+        logo.src = 'img/logo.PNG';
     }
 });
 
