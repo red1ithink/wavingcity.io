@@ -188,7 +188,7 @@ main {
   margin: 0 auto;
   width: 100%; /* 쇼핑몰 제품 사진 영역 너비 조절 */
   max-height: auto;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   z-index: 0;
 }
 
@@ -232,7 +232,7 @@ main {
 
 .products-wrap2 {
   position: relative;
-  top: 100px;
+  top: 0px;
   width: 100%;
   height: auto;
   background-color: rgba(243,243,243 ,1);
