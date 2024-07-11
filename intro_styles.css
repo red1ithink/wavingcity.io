@@ -161,23 +161,16 @@ main {
   margin-bottom: 10px;
   position: relative; 
   opacity: 0;
-  transition: all 1s;
+  transition: opacity 1s ease-in-out;
   z-index: 8;
   padding-top: 80px; /* 헤더 높이에 따라 조정 */
 }
 
-
-
-@keyframes slider {
-  from {
-    left: -100px;
-    opacity: 0;
-  }
-  to {
-    left: 108px;
-    opacity: 1;
-  }
+.product-p.visible {
+  opacity: 1;
 }
+
+
 
 .products-wrap {
   background-color: rgba(243,243,243 ,1);
