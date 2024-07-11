@@ -162,15 +162,13 @@ main {
   position: relative; 
   opacity: 0;
   transition: opacity 1s ease-in-out;
-  z-index: 8;
-  padding-top: 80px; /* 헤더 높이에 따라 조정 */
+  z-index: 100;
+  padding-top: 100px; /* Increased padding */
+  color: #333; /* Ensure text color is visible */
 }
-
-.product-p.visible {
+#about {
   opacity: 1;
 }
-
-
 
 .products-wrap {
   background-color: rgba(243,243,243 ,1);
