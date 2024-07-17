@@ -236,3 +236,23 @@
 .member_background {
   width: 100%;
 }
+
+.team_introduction {
+  width: 100%;
+  display: inline;
+  z-index: 99;
+}
+
+.member_h {
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.4);
+  height: 75px;
+  top: 50%
+}
+
+.member_h p1{
+  color: #fff;
+}
