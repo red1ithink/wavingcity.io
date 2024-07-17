@@ -188,6 +188,7 @@ main {
 .pro1 h1, .pro2 h1, .pro3 h1, .pro4 h1 {
   font-size: 18px; /* 제품 타이틀 글씨 크기 */
   margin-bottom: 5px; /* 타이틀 하단 여백 */
+  max-height: 480px;
 }
 /*
 .pro1:hover, .pro2:hover, .pro3:hover, .pro4:hover {
