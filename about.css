@@ -250,9 +250,15 @@
   align-items: center;
   background-color: rgba(0,0,0,0.4);
   height: 75px;
-  top: 50%
+  display: flex;
+  border-bottom: #fff;
 }
 
-.member_h p1{
+.member_h p{
   color: #fff;
+  font-size: 20px;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
