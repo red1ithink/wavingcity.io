@@ -36,7 +36,9 @@ header {
   top: 0;
   width: 100%;
   height: auto;
-  background-image: url('img/video-2.webp');
+  /*background-image: url('img/video-2.webp');*/
+  background-image: url('img/buildings-1869425.jpg');
+  
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -44,7 +46,7 @@ header {
   height: 100%;
   background-color: rgba(243,243,243 ,1);
 }
-/*#WAVING_CITY {
+#WAVING_CITY {
   position: absolute;
   left: 8.5%;
   top: 32%;
@@ -52,7 +54,7 @@ header {
   font-size: 100px;
   color: rgba(255, 255, 255, 1);
   line-height: 105%;
-}*/
+}
 .logo-container {
   display: flex;
   justify-content: center;
@@ -117,20 +119,7 @@ main {
 }
 
 
-.more {
-  background-color: #222;
-  color: #fff;
-  border: none;
-  padding: 10px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
 
-.more:hover {
-  background-color: #fff;
-  color: #222;
-  cursor: pointer;
-}
 
 
 .logo-container{
@@ -338,12 +327,11 @@ main {
 
 
 .button-wrap {
-  position: relative;
+  position: absolute;
   width: 100%;
   align-items: center;
-  background-color: #f5f5f5;
-  margin-top: 100px;
-  margin-bottom: 1200px;
+  background-color: rgba(243, 243, 243, 1);
+
 }
 
 .buy {
@@ -363,6 +351,10 @@ main {
   background-color: #f5f5f5;
   color: #000;
   cursor: pointer;
+}
+
+.team-wrap {
+  width: 100%;
 }
 
 .team-wrap h2 {

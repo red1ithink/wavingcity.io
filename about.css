@@ -10,7 +10,6 @@
     width: 100%;
     height: auto;
     background-color: #f5f5f5;
-    margin-bottom: 100px;
   }
 
 
@@ -25,10 +24,11 @@
 }
 
 .section-container {
-  width:100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   text-align: center;
+  color: rgba(0,0,0,0);
 }
   
   
@@ -51,7 +51,7 @@
     justify-content: center;
     width: 100%;
     text-align: center;
-    height: auto;
+    height: 300px;
     margin-top: 20px;
   }
 
@@ -74,7 +74,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
+    min-width: 100%;
     text-align: center;
     height: auto;
   }
@@ -92,203 +92,6 @@
   }
 }
 
-
-
-  @media (min-width: 1000px) and (max-width: 1200px){
-    .team-section {
-      position: relative;
-      flex-direction: row;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      width: 100%;
-      text-align: center;
-      height: auto;
-    }
-
-
-    .team_member1 img, .team_member2 img, .team_member3 img, .team_member4 img {
-      position: absolute;
-      width: 250px;
-      height: 250px;
-      display: flex;
-    }
-    .team_member1, .team_member2, .team_member3, .team_member4 {
-      width: 250px;
-      height: 250px;
-    }
-  }
-
-  @media (min-width: 800px) and (max-width: 1000px) {
-    .about-wrap h2 {
-      font-size: 32px;
-      margin-bottom: 20px;
-    }
-    
-    .about-wrap p1 {
-      font-size: 16px;
-      line-height: 1.5;
-      margin-bottom: 20px;
-    }
-    .team-section {
-      position: relative;
-      flex-direction: row;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      text-align: center;
-      width: 500px;
-      height: auto;
-    }
-    .team_member1 img, .team_member2 img, .team_member3 img, .team_member4 img {
-      position: absolute;
-      width: 250px;
-      height: 250px;
-      display: flex;
-    }
-    .team_member1, .team_member2, .team_member3, .team_member4 {
-      width: 250px;
-      height: 250px;
-    }
-
-    .content-container {
-      max-width: 100%;
-      height: auto;
-      position: relative;
-      z-index: 1;
-      max-width: 1200px;
-      margin: 0 auto;
-      justify-content: center;
-    }
-  }
-
-  @media (max-width: 800px) and (min-width: 500px) {
-    .about-wrap h2 {
-      font-size: 32px;
-      margin-bottom: 20px;
-    }
-    
-    .about-wrap p1 {
-      font-size: 16px;
-      line-height: 1.5;
-      margin-bottom: 20px;
-    }
-    .team-section {
-      position: relative;
-      flex-direction: row;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      width: 500px;
-      text-align: center;
-      height: auto;
-    }
-    .team_member1 img, .team_member2 img, .team_member3 img, .team_member4 img {
-      position: absolute;
-      width: 230px;
-      height: 230px;
-      display: flex;
-    }
-    .team_member1, .team_member2, .team_member3, .team_member4 {
-      width: 230px;
-      height: 230px;
-    }
-
-    .content-container {
-      max-width: 100%;
-      height: auto;
-      position: relative;
-      z-index: 1;
-      max-width: 1200px;
-      margin: 0 auto;
-      justify-content: center;
-    }
-  }
-
-  @media (min-width: 400px) and (max-width: 500px) {
-    .about-wrap h2 {
-      font-size: 32px;
-      margin-bottom: 20px;
-    }
-    
-    .about-wrap p1 {
-      font-size: 16px;
-      line-height: 1.5;
-      margin-bottom: 20px;
-    }
-    .team-section {
-      position: relative;
-      flex-direction: row;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      width: 400px;
-      text-align: center;
-      height: auto;
-    }
-    .team_member1 img, .team_member2 img, .team_member3 img, .team_member4 img {
-      position: absolute;
-      width: 200px;
-      height: 200px;
-      display: flex;
-    }
-    .team_member1, .team_member2, .team_member3, .team_member4 {
-      width: 200px;
-      height: 200px;
-    }
-
-    .content-container {
-      max-width: 100%;
-      height: auto;
-      position: relative;
-      z-index: 1;
-      max-width: 1200px;
-      margin: 0 auto;
-      justify-content: center;
-    }
-  }
-  @media (max-width: 400px){
-    .about-wrap h2 {
-      font-size: 32px;
-      margin-bottom: 20px;
-    }
-    
-    .about-wrap p1 {
-      font-size: 16px;
-      line-height: 1.5;
-      margin-bottom: 20px;
-    }
-    .team-section {
-      position: relative;
-      flex-direction: row;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      width: 360px;
-      text-align: center;
-      height: auto;
-    }
-    .team_member1 img, .team_member2 img, .team_member3 img, .team_member4 img {
-      position: absolute;
-      width: 180px;
-      height: 180px;
-      display: flex;
-    }
-    .team_member1, .team_member2, .team_member3, .team_member4 {
-      width: 180px;
-      height: 180px;
-    }
-
-    .content-container {
-      max-width: 100%;
-      height: auto;
-      position: relative;
-      z-index: 1;
-      max-width: 1200px;
-      margin: 0 auto;
-      justify-content: center;
-    }
-  }
   
   /* 스크롤 애니메이션 효과 추가 */
   
@@ -328,7 +131,7 @@
   background-color: #000;
   color: #f5f5f5;
   border: none;
-  width: 100%;
+  width: 80%;
   padding: 10px 20px;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -344,6 +147,12 @@
   background-color: #f5f5f5;
   color: #000;
   cursor: pointer;
+}
+
+.button-wrap1{
+  background-color: rgba(243,243,243 ,1);
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .member {
@@ -447,4 +256,8 @@
   height: 100%;
   min-height: 50px;
   max-height: 300px;
+}
+
+.member_background {
+  width: 100%;
 }
