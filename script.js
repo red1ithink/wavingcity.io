@@ -69,3 +69,61 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+// 요소가 뷰포트에 들어올 때 클래스를 추가하는 함수
+function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+  
+  function onVisibilityChange(el, callback) {
+    let oldVisible;
+    return function () {
+      const visible = isElementInViewport(el);
+      if (visible !== oldVisible) {
+        oldVisible = visible;
+        if (typeof callback === 'function') {
+          callback();
+        }
+      }
+    };
+  }
+  
+  const memberElements = document.querySelectorAll('.member_h');
+  const hoverTexts = [
+    "PRODUCER", 
+    "DIRECTOR", 
+    "DESIGNER", 
+    "DESIGNER"
+  ];
+  
+  memberElements.forEach((el, index) => {
+    const p = el.querySelector('p');
+    const originalText = p.textContent;
+  
+    // 이벤트 리스너를 추가하여 hover 시 텍스트 변경
+    el.addEventListener('mouseenter', () => {
+      p.textContent = hoverTexts[index];
+    });
+  
+    el.addEventListener('mouseleave', () => {
+      p.textContent = originalText;
+    });
+  
+    const handler = onVisibilityChange(el, function () {
+      if (isElementInViewport(el)) {
+        el.classList.add('in-view');
+      } else {
+        el.classList.remove('in-view');
+      }
+    });
+  
+    // 초기 실행
+    handler();
+    // 스크롤 이벤트에 핸들러 추가
+    window.addEventListener('scroll', handler);
+  });
