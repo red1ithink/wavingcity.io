@@ -142,22 +142,6 @@ main {
   }
 }
 
-/*iPhone se*/
-@media (max-width: 380px) {
-  main {
-    background-color: rgba(243,243,243,1);
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 550px;
-    padding-top: 7px;
-    width: 100%;
-    height: auto;
-  }
-}
-
 /*iPhone 12Pro*/
 @media (max-width: 400px) {
   main {
@@ -174,6 +158,21 @@ main {
   }
 }
 
+/*iPhone se*/
+@media (max-width: 380px) {
+  main {
+    background-color: rgba(243,243,243,1);
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 550px;
+    padding-top: 7px;
+    width: 100%;
+    height: auto;
+  }
+}
 
 /*z-flip*/
 @media (max-width: 349px) {
