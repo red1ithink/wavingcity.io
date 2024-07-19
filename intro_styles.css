@@ -107,6 +107,21 @@ main {
   height: auto;
 }
 
+@media (max-width: 720px) {
+  main {
+    background-color: rgba(243,243,243,1);
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 680px;
+    padding-top: 7px;
+    width: 100%;
+    height: auto;
+  }
+}
+
 .up-wrap {
   width: 100%;
   text-align: center;
@@ -117,10 +132,6 @@ main {
   width: 40px;
   height: auto;
 }
-
-
-
-
 
 .logo-container{
   animation: fade-in 2s ease;
