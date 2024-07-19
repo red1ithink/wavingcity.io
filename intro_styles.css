@@ -142,13 +142,26 @@ main {
   font-weight: bold;
 }
 
+.products-wrap2 {
+  position: relative;
+  top: 0px;
+  width: 100%;
+  height: auto;
+  background-color: rgba(243,243,243 ,1);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0px;
+  margin-top: 4px;
+}
+
 
 .product-p {
+  position: relative; 
+  height: auto;
   font-size: 36px;
   width: 100%;
   padding-bottom: 0px;
   margin-bottom: 10px;
-  position: relative; 
   opacity: 0;
   transition: opacity 1s ease-in-out;
   z-index: 3;
@@ -162,12 +175,12 @@ main {
 
 .products-wrap {
   background-color: rgba(243,243,243 ,1);
-  margin-top: 500px; /* 위 div와의 간격 설정 */
+  margin-top: 500px;
   display: flex;
-  flex-wrap: wrap; /* 여러 줄로 나열 */
-  justify-content: space-between; /* 양쪽 끝 정렬 */
+  flex-wrap: wrap;
+  justify-content: space-between; 
   margin: 0 auto;
-  width: 100%; /* 쇼핑몰 제품 사진 영역 너비 조절 */
+  width: 100%;
   max-height: auto;
   margin-bottom: 0px;
   z-index: 0;
@@ -324,16 +337,6 @@ main {
   .products-wrap2 h1 {
     font-size: 14px;
   }
-}
-
-
-
-.button-wrap {
-  position: absolute;
-  width: 100%;
-  align-items: center;
-  background-color: rgba(243, 243, 243, 1);
-
 }
 
 .buy {
