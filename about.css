@@ -96,7 +96,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
-  z-index: 4;
+  z-index: 999;
   transform: translate(0, 50%);
 }
 
@@ -115,10 +115,14 @@
 .button-wrap2 {
   background-color: rgba(243,243,243,1);
   margin-top: 0px;
-  margin-bottom: 0px;
   height: 100px;
   padding: 0px;
+  z-index: 99;
+  width: 100%;
+  align-items: center;
 }
+  
+
 
 .member {
   opacity: 1;
@@ -238,7 +242,7 @@
   width: 100%;
   display: inline;
   height: 300px;
-  z-index: 99;
+  z-index: 9;
 }
 
 /* member_h 애니메이션 및 기본 스타일 */
@@ -318,6 +322,12 @@
     height: 240px;
   }
 
+  .team_introduction {
+    width: 100%;
+    display: inline;
+    height: 240px;
+    z-index: 9;
+  }
   
   .member_h {
   height: 60px;
