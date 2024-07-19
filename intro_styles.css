@@ -107,7 +107,8 @@ main {
   height: auto;
 }
 
-@media (max-width: 720px) {
+/*iPhone 14 pro*/
+@media (max-width: 500px) {
   main {
     background-color: rgba(243,243,243,1);
     position: relative;
@@ -115,12 +116,45 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 680px;
+    margin-top: 850px;
     padding-top: 7px;
     width: 100%;
     height: auto;
   }
 }
+
+/*iPhone 14 pro*/
+@media (max-width: 500px) {
+  main {
+    background-color: rgba(243,243,243,1);
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 800px;
+    padding-top: 7px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  main {
+    background-color: rgba(243,243,243,1);
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 600px;
+    padding-top: 7px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+
 
 .up-wrap {
   width: 100%;
