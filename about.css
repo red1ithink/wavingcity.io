@@ -318,12 +318,6 @@
     height: 240px;
   }
 
-  .team_introduction {
-  width: 100%;
-  display: inline;
-  height: 240px !important;
-  z-index: 99;
-  }
   
   .member_h {
   height: 60px;
