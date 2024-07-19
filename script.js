@@ -67,8 +67,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
-
 // 요소가 뷰포트에 들어올 때 클래스를 추가하는 함수
 function isElementInViewport(el) {
     const rect = el.getBoundingClientRect();
@@ -87,7 +85,7 @@ function isElementInViewport(el) {
       if (visible !== oldVisible) {
         oldVisible = visible;
         if (typeof callback === 'function') {
-          callback();
+          callback(visible);
         }
       }
     };
@@ -100,10 +98,11 @@ function isElementInViewport(el) {
     "DESIGNER", 
     "DESIGNER"
   ];
+  const originalTexts = [];
   
   memberElements.forEach((el, index) => {
     const p = el.querySelector('p');
-    const originalText = p.textContent;
+    originalTexts[index] = p.textContent; // Save original text
   
     // 이벤트 리스너를 추가하여 hover 시 텍스트 변경
     el.addEventListener('mouseenter', () => {
@@ -111,11 +110,11 @@ function isElementInViewport(el) {
     });
   
     el.addEventListener('mouseleave', () => {
-      p.textContent = originalText;
+      p.textContent = originalTexts[index];
     });
   
-    const handler = onVisibilityChange(el, function () {
-      if (isElementInViewport(el)) {
+    const handler = onVisibilityChange(el, function (visible) {
+      if (visible) {
         el.classList.add('in-view');
       } else {
         el.classList.remove('in-view');
@@ -127,3 +126,30 @@ function isElementInViewport(el) {
     // 스크롤 이벤트에 핸들러 추가
     window.addEventListener('scroll', handler);
   });
+  
+  // 순차적으로 하나씩 텍스트를 변경하는 로직
+  let currentIndex = 0;
+  setInterval(() => {
+    if (memberElements.length === 0) return;
+  
+    const currentEl = memberElements[currentIndex];
+    const currentP = currentEl.querySelector('p');
+    const currentOriginalText = originalTexts[currentIndex];
+    const currentHoverText = hoverTexts[currentIndex];
+  
+    // 현재 요소가 뷰포트에 있을 때만 텍스트 변경
+    if (currentEl.classList.contains('in-view')) {
+      currentP.textContent = currentHoverText;
+    }
+  
+    // 이전 요소의 텍스트를 원래대로 되돌리기
+    const previousIndex = (currentIndex - 1 + memberElements.length) % memberElements.length;
+    const previousEl = memberElements[previousIndex];
+    const previousP = previousEl.querySelector('p');
+    if (previousEl.classList.contains('in-view')) {
+      previousP.textContent = originalTexts[previousIndex];
+    }
+  
+    // 다음 요소로 인덱스 이동
+    currentIndex = (currentIndex + 1) % memberElements.length;
+  }, 1000); // 3초마다 텍스트 변경
