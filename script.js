@@ -153,3 +153,32 @@ function isElementInViewport(el) {
     // 다음 요소로 인덱스 이동
     currentIndex = (currentIndex + 1) % memberElements.length;
   }, 1000); // 3초마다 텍스트 변경
+
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const modal = document.getElementById('productModal');
+    const openModalButtons = document.querySelectorAll('#openModalButton, #openModalButton2');
+
+    // 모달을 기본적으로 숨김 상태로 설정
+    modal.style.display = 'none';
+    modal.classList.remove('show-modal');
+
+    // Open the modal
+    openModalButtons.forEach(button => {
+        button.addEventListener('click', function (event) {
+            event.preventDefault(); // 기본 링크 동작 방지
+            modal.style.display = 'flex';
+            requestAnimationFrame(() => {
+                modal.classList.add('show-modal'); // 애니메이션 클래스 추가
+            });
+        });
+    });
+
+    // Close the modal when clicking outside of the modal content
+    window.addEventListener('click', function (event) {
+        if (event.target === modal) {
+            modal.classList.remove('show-modal');
+            modal.style.display = 'none'; // 애니메이션 없이 모달 숨기기
+        }
+    });
+});

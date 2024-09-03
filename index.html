@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>red1ithink Gallery</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>red1ithink Gallery</title>
     <link rel="stylesheet" type="text/css" href="about.css" />
     <link rel="stylesheet" type="text/css" href="intro_styles.css" />
     <link rel="stylesheet" type="text/css" href="slider.css" />
+    <link rel="stylesheet" type="text/css" href="modal.css" />
+    <!-- 모달 스타일 추가 -->
   </head>
   <body>
     <header>
@@ -36,9 +38,8 @@
           <img src="img/thum.jpeg" alt="Pro1" />
         </div>
         <div class="button-wrap1">
-          <a href="https://www.yes24.com/Product/Goods/98820861" class="buy"
-            >GET : ALBUM PACKAGE</a
-          >
+          <a class="buy" id="openModalButton">GET : ALBUM PACKAGE</a>
+          <!-- 버튼 클릭 시 모달 오픈 -->
         </div>
       </div>
 
@@ -63,7 +64,8 @@
         </div>
         <ul class="pagination"></ul>
         <div class="button-wrap1">
-          <a href="https://www.yes24.com/Product/Goods/98820861" class="buy">GET : ALBUM PACKAGE</a>
+          <a class="buy" id="openModalButton2">GET : ALBUM PACKAGE</a>
+          <!-- 버튼 클릭 시 모달 오픈 -->
         </div>
       </div>
 
@@ -89,7 +91,7 @@
                 overflow: hidden;
                 border-radius: 10px;
               "
-              sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+              sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation"
               src="https://embed.music.apple.com/kr/playlist/%EC%8B%AC%EC%95%BC%EC%9D%98-%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B8%8C/pl.ce61f0565d654619959f82b402b78155"
             ></iframe>
           </ul>
@@ -109,9 +111,10 @@
           </p>
         </div>
         <div class="button-wrap1">
-          <a href="https://www.instagram.com/wavingcity/" class="buy">WAVING CITY : PROJECT</a>
+          <a href="https://www.instagram.com/wavingcity/" class="buy"
+            >WAVING CITY : PROJECT</a
+          >
         </div>
-
       </div>
       <p class="product-p" id="about">ABOUT<br />TEAM</p>
     </main>
@@ -122,31 +125,48 @@
           <div class="team_introduction">
             <div class="member_h">
               <p>WONJUN LEE</p>
-              <p></p>
             </div>
 
             <div class="member_h">
               <p>HONGBIN KIM</p>
-              <p></p>
             </div>
 
             <div class="member_h">
               <p>JUSEONG KIM</p>
-              <p></p>
             </div>
 
             <div class="member_h">
               <p>SANGHYUN PARK</p>
-              <p></p>
             </div>
           </div>
         </div>
         <div class="button-wrap2">
-          <href="https://www.instagram.com/wavingcity/" class="more">WAVING CITY : ARCHIVE</a>
+          <a href="https://www.instagram.com/wavingcity/" class="more"
+            >WAVING CITY : ARCHIVE</a
+          >
         </div>
       </div>
     </div>
+
+    <div id="productModal" class="modal">
+      <div class="modal-content">
+        <div class="product-wrapper">
+          <div class="product-image">
+            <img src="img/_MG21.JPG" alt="Product Image" />
+          </div>
+          <div class="product-details">
+            <h1 class="product-title">33.1 Vibes PACKAGE</h1>
+            <p class="product-price">20,000₩</p>
+            <p class="product-description">
+              This package includes a CD, poster, keyring, and stickers.
+            </p>
+            <a href="checkout_page.html" class="buy-button">Buy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="slider2.js"></script>
   </body>
-  <script src="script.js"></script>
-  <script src="slider2.js"></script>
 </html>
