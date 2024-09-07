@@ -28,6 +28,7 @@
     border-radius: 10px;
     transform: scale(0.8);
     transition: transform 0.3s ease;
+    position: relative;
 }
 
 .modal.show-modal .modal-content {
@@ -98,4 +99,46 @@
 .buy-button:hover {
     background-color: #e43e3e;
     transform: scale(1.05);
+}
+
+/* 모바일 환경에 대한 스타일링 */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%; /* 모바일 환경에 맞게 너비를 조정 */
+        max-width: 350px; /* 최대 너비 설정 */
+        padding: 15px; /* 패딩을 조정하여 공간 확보 */
+    }
+
+    .product-title {
+        font-size: 20px; /* 모바일에 맞게 글자 크기 조정 */
+    }
+
+    .product-price {
+        font-size: 18px;
+    }
+
+    .product-description {
+        font-size: 12px; /* 설명 글 크기 줄이기 */
+    }
+
+    .buy-button {
+        padding: 8px 0; /* 버튼의 높이를 조정 */
+        font-size: 14px;
+    }
+}
+
+/* X 버튼 스타일링 */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    font-size: 24px;
+    font-weight: bold;
+    color: black
+    cursor: pointer;
+    z-index: 99;
+}
+
+.close-button:hover {
+    color: #ffffff; /* 호버 시 색 변경 */
 }

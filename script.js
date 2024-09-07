@@ -158,10 +158,7 @@ function isElementInViewport(el) {
   document.addEventListener('DOMContentLoaded', function () {
     const modal = document.getElementById('productModal');
     const openModalButtons = document.querySelectorAll('#openModalButton, #openModalButton2');
-
-    // 모달을 기본적으로 숨김 상태로 설정
-    modal.style.display = 'none';
-    modal.classList.remove('show-modal');
+    const closeModalButton = document.getElementById('closeModalButton'); // X 버튼 선택
 
     // Open the modal
     openModalButtons.forEach(button => {
@@ -174,11 +171,21 @@ function isElementInViewport(el) {
         });
     });
 
+    // Close the modal when clicking the X button
+    closeModalButton.addEventListener('click', function () {
+        modal.classList.remove('show-modal');
+        setTimeout(() => {
+            modal.style.display = 'none'; // 모달이 닫힐 때 딜레이를 줘서 자연스러운 애니메이션 적용
+        }, 300); // 애니메이션 시간 (300ms)과 동일하게 설정
+    });
+
     // Close the modal when clicking outside of the modal content
     window.addEventListener('click', function (event) {
         if (event.target === modal) {
             modal.classList.remove('show-modal');
-            modal.style.display = 'none'; // 애니메이션 없이 모달 숨기기
+            setTimeout(() => {
+                modal.style.display = 'none';
+            }, 300);
         }
     });
 });
