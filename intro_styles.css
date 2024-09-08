@@ -263,6 +263,8 @@ main {
     z-index: 3;
     padding-top: 100px; /* Increased padding */
     color: #333; /* Ensure text color is visible */
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
