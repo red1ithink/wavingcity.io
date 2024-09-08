@@ -97,7 +97,7 @@
 }
 
 .buy-button:hover {
-    background-color: #e43e3e;
+    background-color: rgb(99, 114, 134);
     transform: scale(1.05);
 }
 
