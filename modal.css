@@ -104,7 +104,7 @@
 /* 모바일 환경에 대한 스타일링 */
 @media (max-width: 768px) {
     .modal-content {
-        width: 95%; /* 모바일 환경에 맞게 너비를 조정 */
+        width: 70%; /* 모바일 환경에 맞게 너비를 조정 */
         max-width: 350px; /* 최대 너비 설정 */
         padding: 15px; /* 패딩을 조정하여 공간 확보 */
     }
@@ -134,7 +134,7 @@
     right: 14px;
     font-size: 24px;
     font-weight: bold;
-    color: black
+    color: black;
     cursor: pointer;
     z-index: 99;
 }

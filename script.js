@@ -160,6 +160,9 @@ function isElementInViewport(el) {
     const openModalButtons = document.querySelectorAll('#openModalButton, #openModalButton2');
     const closeModalButton = document.getElementById('closeModalButton'); // X 버튼 선택
 
+    modal.style.display = 'none';
+    modal.classList.remove('show-modal');
+    
     // Open the modal
     openModalButtons.forEach(button => {
         button.addEventListener('click', function (event) {
