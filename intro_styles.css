@@ -38,6 +38,9 @@ header {
   height: auto;
   /*background-image: url('img/video-2.webp');*/
   background-image: url('img/buildings-1869425.jpg');
+  /*background-image: url('img/keyring1.jpeg');*/
+
+
   
   background-size: cover;
   background-repeat: no-repeat;
@@ -240,6 +243,7 @@ main {
   position: relative; 
   height: auto;
   font-size: 36px;
+  font-weight: 600;
   width: 100%;
   padding-bottom: 0px;
   margin-bottom: 10px;
